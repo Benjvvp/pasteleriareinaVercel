@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+.navbar-brand{
+    font-family: Amatic SC;
+    font-size: 40px !important;    
+    margin-left: 5%;
+}
+.navbar-nav{
+    margin-left: 20%;
+}
+.nav-item{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.nav-link::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    display: block;
+    transition: width 0.2s ease-in;
+    background: #CF91FF;
+    bottom: -2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+.nav-link:hover{
+    color: #333333;
+}
+.nav-link{
+    color: #000;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: bold;
+}
+.navbarline{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 768px){
+    .navbar-nav{
+        margin-left: 0;
+        text-align: center;
+    }
+}
+@media (max-width: 320px){
+    .container-fluid{
+        justify-content: center !important;
+    }
+}

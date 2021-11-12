@@ -1,0 +1,30 @@
+.input_contact{
+    border: none !important;
+    border-bottom: 1px solid #BCBCBC !important;
+    border-radius: 0 !important;
+    color: #5f5f5f !important;
+}
+.form-control:focus{
+    box-shadow: none !important;
+}
+.form-floating label{
+    color: #BCBCBC;
+}
+.input_contact_textarea{
+    resize: none;
+    height: 15em !important;
+}
+.input_contact_textarea{
+    color: #5f5f5f;
+}
+.input_contact_button{
+    background-color: #C89E97;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 1%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 17px;
+}

@@ -28,3 +28,21 @@
     font-size: 20px;
     padding: 5px 17px;
 }
+.btn__contact__select{
+    background-color: #E0B1A9 !important;
+    font-family: 'Amatic SC';
+    font-size: 27px;
+    font-weight: bold;
+    padding: 1em;
+    color: #fff !important;
+    transition: color 0.5s ease;
+}
+.btn__contact__active{
+    background-color: #9E574B !important;
+}
+.btn__contact__select:hover{
+    background-color: #9E574B !important;
+}
+.mt-10{
+    margin-top: 32%;
+}

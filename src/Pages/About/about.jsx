@@ -87,19 +87,19 @@ export function AboutPage() {
             <div className="row justify-content-center">
               <div className="col-xl-6 col-lg-6 col-md-7 col-sm-12 pb-lg-5 pt-lg-5">
                 <div
-                  class="card mb-3 border-0 text-start"
+                  className="card mb-3 border-0 text-start"
                   style={{ maxWidth: 700 + "px" }}
                 >
-                  <div class="row g-0">
-                    <div class="col-md-2">
-                      <img src="/img/border.png" className='mx-auto d-block mt-3' alt="" srcset="" />
+                  <div className="row g-0">
+                    <div className="col-md-2">
+                      <img src="/img/border.png" className='mx-auto d-block mt-3' alt="" srcSet="" />
                       <h1 className="numberAdvantage text-center">01</h1>
-                      <img src="/img/border.png" className='mx-auto d-block' alt="" srcset="" />
+                      <img src="/img/border.png" className='mx-auto d-block' alt="" srcSet="" />
                     </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title titleAdvantage">Local</h5>
-                        <p class="card-text descAdvantage">
+                    <div className="col-md-8">
+                      <div className="card-body">
+                        <h5 className="card-title titleAdvantage">Local</h5>
+                        <p className="card-text descAdvantage">
                           Lorem ipsum dolor sit amet consectetur adipiscing
                           elit, a habitasse aenean dui auctor hendrerit
                           ridiculus tortor, vulputate viverra id cras volutpat
@@ -115,19 +115,19 @@ export function AboutPage() {
               </div>
               <div className="col-xl-6 col-lg-6 col-md-7 col-sm-12 pt-lg-5">
                 <div
-                  class="card mb-3 border-0 text-start"
+                  className="card mb-3 border-0 text-start"
                   style={{ maxWidth: 700 + "px" }}
                 >
-                  <div class="row g-0">
-                    <div class="col-md-2">
-                      <img src="/img/border.png" className='mx-auto d-block mt-3' alt="" srcset="" />
+                  <div className="row g-0">
+                    <div className="col-md-2">
+                      <img src="/img/border.png" className='mx-auto d-block mt-3' alt="" srcSet="" />
                       <h1 className="numberAdvantage text-center">02</h1>
-                      <img src="/img/border.png" className='mx-auto d-block' alt="" srcset="" />
+                      <img src="/img/border.png" className='mx-auto d-block' alt="" srcSet="" />
                     </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title titleAdvantage">Experiencia</h5>
-                        <p class="card-text descAdvantage">
+                    <div className="col-md-8">
+                      <div className="card-body">
+                        <h5 className="card-title titleAdvantage">Experiencia</h5>
+                        <p className="card-text descAdvantage">
                           Lorem ipsum dolor sit amet consectetur adipiscing
                           elit, a habitasse aenean dui auctor hendrerit
                           ridiculus tortor, vulputate viverra id cras volutpat
@@ -143,21 +143,21 @@ export function AboutPage() {
               </div>
               <div className="col-xl-6 col-lg-6 col-md-7 col-sm-12">
                 <div
-                  class="card mb-3 border-0 text-start"
+                  className="card mb-3 border-0 text-start"
                   style={{ maxWidth: 700 + "px" }}
                 >
-                  <div class="row g-0">
-                    <div class="col-md-2">
-                      <img src="/img/border.png" className='mx-auto d-block mt-3' alt="" srcset="" />
+                  <div className="row g-0">
+                    <div className="col-md-2">
+                      <img src="/img/border.png" className='mx-auto d-block mt-3' alt="" srcSet="" />
                       <h1 className="numberAdvantage text-center">03</h1>
-                      <img src="/img/border.png" className='mx-auto d-block' alt="" srcset="" />
+                      <img src="/img/border.png" className='mx-auto d-block' alt="" srcSet="" />
                     </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title titleAdvantage">
+                    <div className="col-md-8">
+                      <div className="card-body">
+                        <h5 className="card-title titleAdvantage">
                           Precios Justos
                         </h5>
-                        <p class="card-text descAdvantage">
+                        <p className="card-text descAdvantage">
                           Lorem ipsum dolor sit amet consectetur adipiscing
                           elit, a habitasse aenean dui auctor hendrerit
                           ridiculus tortor, vulputate viverra id cras volutpat
@@ -173,21 +173,21 @@ export function AboutPage() {
               </div>
               <div className="col-xl-6 col-lg-6 col-md-7 col-sm-12">
                 <div
-                  class="card mb-3 border-0 text-start"
+                  className="card mb-3 border-0 text-start"
                   style={{ maxWidth: 800 + "px" }}
                 >
-                  <div class="row g-0">
-                    <div class="col-md-2">
-                      <img src="/img/border.png" className='mx-auto d-block mt-3' alt="" srcset="" />
+                  <div className="row g-0">
+                    <div className="col-md-2">
+                      <img src="/img/border.png" className='mx-auto d-block mt-3' alt="" srcSet="" />
                       <h1 className="numberAdvantage text-center">04</h1>
-                      <img src="/img/border.png" className='mx-auto d-block' alt="" srcset="" />
+                      <img src="/img/border.png" className='mx-auto d-block' alt="" srcSet="" />
                     </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title titleAdvantage">
+                    <div className="col-md-8">
+                      <div className="card-body">
+                        <h5 className="card-title titleAdvantage">
                           Rompemos los Estandares
                         </h5>
-                        <p class="card-text descAdvantage">
+                        <p className="card-text descAdvantage">
                           Lorem ipsum dolor sit amet consectetur adipiscing
                           elit, a habitasse aenean dui auctor hendrerit
                           ridiculus tortor, vulputate viverra id cras volutpat

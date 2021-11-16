@@ -7,7 +7,7 @@ export default function TestimonyCard(props) {
 
   return (
     <div>
-        <div className="testimonyCard__top d-flex">
+        <div className="d-flex testimonyCard__top">
             <img src={img} alt="" srcSet="" className='testimonyCard__img' />
             <p className='testimonyCard__name my-auto ms-5'>{name}</p>
         </div>

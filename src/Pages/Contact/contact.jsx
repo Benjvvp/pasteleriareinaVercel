@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import NavBar from "../../Components/NavBar/navbar.jsx";
 import Footer from "../../Components/Footer/footer.jsx";
+import emailjs from "emailjs-com";
 import "./contact.css";
 
 export function ContactPage() {
   const [isActive, setIsActive] = useState(true);
   const [menu, setMenu] = useState(0);
   const [loading, setLoading] = useState(true);
+  const form = useRef();
 
   function getAPISheet() {
     const idSheets = "1TE1x120njvDHTM62LQLdOG0rm9oN8Z26qOMEJyH_Ha4";
@@ -20,6 +22,38 @@ export function ContactPage() {
         setLoading(false);
       });
   }
+
+  function sucessAlert(message) {
+    const pattern = document.querySelectorAll(".informationSection");
+    pattern.forEach((element) => {
+      const alert = document.createElement("div");
+      alert.innerHTML = ```
+      <div class="alert alert-success" role="alert">
+        ${message}
+      </div>
+      ```;
+      element.current.appendChild(alert);
+    });
+  }
+
+  const SendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "template_nhdfxrt",
+        form.current,
+        "user_2ih7wm0nDhK4iHTJJsGdA"
+      )
+      .then(
+        (result) => {
+          sucessAlert("Message sent successfully.");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   useEffect(() => {
     getAPISheet();
@@ -66,7 +100,12 @@ export function ContactPage() {
                 }`}
               >
                 <h1 className="informationSection__title">Contactanos</h1>
-                <form className="needs-validation" noValidate>
+                <form
+                  className="needs-validation"
+                  noValidate
+                  ref={form}
+                  onSubmit={SendEmail}
+                >
                   <div className="form-floating">
                     <input
                       type="text"
@@ -148,13 +187,13 @@ export function ContactPage() {
                       type="text"
                       className="form-control input_contact"
                       id="nameFloating"
-                      placeholder="Benjamin"
+                      placeholder="Nombre"
                       required
                     />
                     <label htmlFor="nameFloating">Nombre *</label>
                     <div className="valid-feedback text-start">Bien!</div>
                     <div className="invalid-feedback text-start mb-2">
-                      Ingresa tu nombre
+                      Ingrese su nombre
                     </div>
                   </div>
                   <div className="form-floating">
@@ -162,7 +201,7 @@ export function ContactPage() {
                       type="text"
                       className="form-control input_contact"
                       id="numberFloating"
-                      placeholder="Benjamin"
+                      placeholder="Contacto"
                       required
                     />
                     <label htmlFor="numberFloating">
@@ -170,20 +209,63 @@ export function ContactPage() {
                     </label>
                     <div className="valid-feedback text-start">Bien!</div>
                     <div className="invalid-feedback text-start mb-2">
-                      Ingresa tu contacto
+                      Ingrese su contacto
                     </div>
                   </div>
-                  <div className="form-floating mt-4">
-                    <textarea
-                      className="form-control input_contact_textarea"
-                      placeholder="Mensaje"
-                      id="floatingTextarea"
+                  <div className="form-floating">
+                    <input
+                      type="text"
+                      className="form-control input_contact"
+                      id="numberFloating"
+                      placeholder="Sabor"
                       required
-                    ></textarea>
-                    <label htmlFor="floatingTextarea">Mensaje *</label>
+                    />
+                    <label htmlFor="numberFloating">Sabor</label>
                     <div className="valid-feedback text-start">Bien!</div>
-                    <div className="invalid-feedback text-start">
-                      Ingresa tu mensaje
+                    <div className="invalid-feedback text-start mb-2">
+                      Ingrese el sabor
+                    </div>
+                  </div>
+                  <div className="form-floating">
+                    <input
+                      type="text"
+                      className="form-control input_contact"
+                      id="numberFloating"
+                      placeholder="Tamaño"
+                      required
+                    />
+                    <label htmlFor="numberFloating">Tamaño</label>
+                    <div className="valid-feedback text-start">Bien!</div>
+                    <div className="invalid-feedback text-start mb-2">
+                      Ingrese el tamaño de la torta
+                    </div>
+                  </div>
+                  <div className="form-floating">
+                    <input
+                      type="text"
+                      className="form-control input_contact"
+                      id="numberFloating"
+                      placeholder="Diseño"
+                      required
+                    />
+                    <label htmlFor="numberFloating">Describa el diseño.</label>
+                    <div className="valid-feedback text-start">Bien!</div>
+                    <div className="invalid-feedback text-start mb-2">
+                      Ingresa la descripcion del diseño.
+                    </div>
+                  </div>
+                  <div className="form-floating">
+                    <input
+                      type="text"
+                      className="form-control input_contact"
+                      id="numberFloating"
+                      placeholder="Diseño"
+                      required
+                    />
+                    <label htmlFor="numberFloating">Comuna de despacho.</label>
+                    <div className="valid-feedback text-start">Bien!</div>
+                    <div className="invalid-feedback text-start mb-2">
+                      Ingresa tu comuna de despacho.
                     </div>
                   </div>
                   <button type="submit" className="input_contact_button">

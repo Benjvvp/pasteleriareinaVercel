@@ -14,3 +14,23 @@
     margin-top: 5%;
     text-align: left;
 }
+@media (max-width: 768px){
+    .testimonyCard__top{
+        justify-content: center;
+    }
+    .testimonyCard__testimony{
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+@media (max-width: 425px){
+    .testimonyCard__top{
+        display: block !important;
+    }
+    .testimonyCard__testimony{
+        width: 100%;
+    }
+}

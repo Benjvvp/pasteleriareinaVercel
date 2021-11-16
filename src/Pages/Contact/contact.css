@@ -35,7 +35,7 @@
     font-weight: bold;
     padding: 1em;
     color: #fff !important;
-    transition: color 0.5s ease;
+    transition: background-color 0.5s ease;
 }
 .btn__contact__active{
     background-color: #9E574B !important;

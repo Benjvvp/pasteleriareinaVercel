@@ -27,6 +27,10 @@
     border-radius: 5px;
     font-size: 20px;
     padding: 5px 17px;
+    transition: background-color 0.5s ease;
+}
+.input_contact_button:hover{
+    background-color: #9E574B;
 }
 .btn__contact__select{
     background-color: #E0B1A9 !important;

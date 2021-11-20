@@ -1,14 +1,14 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import NavBar from "../../Components/NavBar/navbar.jsx";
 import Footer from "../../Components/Footer/footer.jsx";
-import emailjs from "emailjs-com";
 import "./contact.css";
+import ContactForm from "../../Components/ContactForm/contactForm.jsx";
+import ConsultForm from "../../Components/ConsultForm/consultForm.jsx";
 
 export function ContactPage() {
   const [isActive, setIsActive] = useState(true);
   const [menu, setMenu] = useState(0);
   const [loading, setLoading] = useState(true);
-  const form = useRef();
 
   function getAPISheet() {
     const idSheets = "1TE1x120njvDHTM62LQLdOG0rm9oN8Z26qOMEJyH_Ha4";
@@ -23,38 +23,6 @@ export function ContactPage() {
       });
   }
 
-  function sucessAlert(message) {
-    const pattern = document.querySelectorAll(".informationSection");
-    pattern.forEach((element) => {
-      const alert = document.createElement("div");
-      alert.innerHTML = ```
-      <div class="alert alert-success" role="alert">
-        ${message}
-      </div>
-      ```;
-      element.current.appendChild(alert);
-    });
-  }
-
-  const SendEmail = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "template_nhdfxrt",
-        form.current,
-        "user_2ih7wm0nDhK4iHTJJsGdA"
-      )
-      .then(
-        (result) => {
-          sucessAlert("Message sent successfully.");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
   useEffect(() => {
     getAPISheet();
     const script = document.createElement("script");
@@ -65,6 +33,7 @@ export function ContactPage() {
       document.body.removeChild(script);
     };
   }, []);
+
   return (
     !loading && (
       <>
@@ -73,7 +42,7 @@ export function ContactPage() {
           className={`container mt-5 ${menu === 1 && isActive ? "" : "mb-5"}`}
         >
           <div className="row">
-            <div className="col-4 me-3">
+            <div className="col-xl-4 col-lg-5 pb-lg-5 col-md-12 col-12 me-3 me-md-0 mb-md-5">
               <div className="d-flex flex-column d-block mx-auto w-100">
                 <button
                   className={`btn btn__contact__select mt-10 fs-4 ${
@@ -100,73 +69,7 @@ export function ContactPage() {
                 }`}
               >
                 <h1 className="informationSection__title">Contactanos</h1>
-                <form
-                  className="needs-validation"
-                  noValidate
-                  ref={form}
-                  onSubmit={SendEmail}
-                >
-                  <div className="form-floating">
-                    <input
-                      type="text"
-                      className="form-control input_contact"
-                      id="nameFloating"
-                      placeholder="Benjamin"
-                      required
-                    />
-                    <label htmlFor="nameFloating">Nombre *</label>
-                    <div className="valid-feedback text-start">Bien!</div>
-                    <div className="invalid-feedback text-start mb-2">
-                      Ingresa tu nombre
-                    </div>
-                  </div>
-                  <div className="form-floating">
-                    <input
-                      type="email"
-                      className="form-control input_contact"
-                      id="emailFloating"
-                      placeholder="Benjamin"
-                      required
-                    />
-                    <label htmlFor="emailFloating">Correo *</label>
-                    <div className="valid-feedback text-start">Bien!</div>
-                    <div className="invalid-feedback text-start mb-2">
-                      Ingresa tu correo
-                    </div>
-                  </div>
-                  <div className="form-floating">
-                    <input
-                      type="text"
-                      className="form-control input_contact"
-                      id="numberFloating"
-                      placeholder="Benjamin"
-                      required
-                    />
-                    <label htmlFor="numberFloating">
-                      Metodo de Contacto (Instagram, Facebook, Numero, etc) *
-                    </label>
-                    <div className="valid-feedback text-start">Bien!</div>
-                    <div className="invalid-feedback text-start mb-2">
-                      Ingresa tu contacto
-                    </div>
-                  </div>
-                  <div className="form-floating mt-4">
-                    <textarea
-                      className="form-control input_contact_textarea"
-                      placeholder="Mensaje"
-                      id="floatingTextarea"
-                      required
-                    ></textarea>
-                    <label htmlFor="floatingTextarea">Mensaje *</label>
-                    <div className="valid-feedback text-start">Bien!</div>
-                    <div className="invalid-feedback text-start">
-                      Ingresa tu mensaje
-                    </div>
-                  </div>
-                  <button type="submit" className="input_contact_button">
-                    Enviar
-                  </button>
-                </form>
+                <ContactForm />
               </div>
               <div
                 className={`informationSection mx-auto ${
@@ -178,100 +81,7 @@ export function ContactPage() {
                     ? "Consultar cotizacion"
                     : "Tenemos la agenda llena, no se permite mas cotizaciones."}
                 </h1>
-                <form
-                  className={`needs-validation ${isActive ? "" : "d-none"}`}
-                  noValidate
-                >
-                  <div className="form-floating">
-                    <input
-                      type="text"
-                      className="form-control input_contact"
-                      id="nameFloating"
-                      placeholder="Nombre"
-                      required
-                    />
-                    <label htmlFor="nameFloating">Nombre *</label>
-                    <div className="valid-feedback text-start">Bien!</div>
-                    <div className="invalid-feedback text-start mb-2">
-                      Ingrese su nombre
-                    </div>
-                  </div>
-                  <div className="form-floating">
-                    <input
-                      type="text"
-                      className="form-control input_contact"
-                      id="numberFloating"
-                      placeholder="Contacto"
-                      required
-                    />
-                    <label htmlFor="numberFloating">
-                      Metodo de Contacto (Instagram, Facebook, Numero, etc) *
-                    </label>
-                    <div className="valid-feedback text-start">Bien!</div>
-                    <div className="invalid-feedback text-start mb-2">
-                      Ingrese su contacto
-                    </div>
-                  </div>
-                  <div className="form-floating">
-                    <input
-                      type="text"
-                      className="form-control input_contact"
-                      id="numberFloating"
-                      placeholder="Sabor"
-                      required
-                    />
-                    <label htmlFor="numberFloating">Sabor</label>
-                    <div className="valid-feedback text-start">Bien!</div>
-                    <div className="invalid-feedback text-start mb-2">
-                      Ingrese el sabor
-                    </div>
-                  </div>
-                  <div className="form-floating">
-                    <input
-                      type="text"
-                      className="form-control input_contact"
-                      id="numberFloating"
-                      placeholder="Tamaño"
-                      required
-                    />
-                    <label htmlFor="numberFloating">Tamaño</label>
-                    <div className="valid-feedback text-start">Bien!</div>
-                    <div className="invalid-feedback text-start mb-2">
-                      Ingrese el tamaño de la torta
-                    </div>
-                  </div>
-                  <div className="form-floating">
-                    <input
-                      type="text"
-                      className="form-control input_contact"
-                      id="numberFloating"
-                      placeholder="Diseño"
-                      required
-                    />
-                    <label htmlFor="numberFloating">Describa el diseño.</label>
-                    <div className="valid-feedback text-start">Bien!</div>
-                    <div className="invalid-feedback text-start mb-2">
-                      Ingresa la descripcion del diseño.
-                    </div>
-                  </div>
-                  <div className="form-floating">
-                    <input
-                      type="text"
-                      className="form-control input_contact"
-                      id="numberFloating"
-                      placeholder="Diseño"
-                      required
-                    />
-                    <label htmlFor="numberFloating">Comuna de despacho.</label>
-                    <div className="valid-feedback text-start">Bien!</div>
-                    <div className="invalid-feedback text-start mb-2">
-                      Ingresa tu comuna de despacho.
-                    </div>
-                  </div>
-                  <button type="submit" className="input_contact_button">
-                    Enviar
-                  </button>
-                </form>
+                <ConsultForm isActive={isActive}/>
               </div>
             </div>
           </div>

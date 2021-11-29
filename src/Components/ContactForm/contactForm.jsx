@@ -13,23 +13,25 @@ export default function ContactForm() {
   const SendEmail = (e) => {
     e.preventDefault();
     if(name === "" || email === "" || contact === "" || message === "") return;
-    SucessAlert('Mensaje enviado correctamente, gracias por contactarnos.');
     console.log(`${name}, ${email}, ${contact}, ${message}`)
-    /*emailjs
+
+    emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "template_nhdfxrt",
-        form.current,
+        "service_5qejtlg",
+        "template_oxmekug",
+        e.target,
         "user_2ih7wm0nDhK4iHTJJsGdA"
       )
       .then(
         (result) => {
-          
+          SucessAlert(
+            "Mensaje enviado correctamente, gracias por contactarnos."
+          );
         },
         (error) => {
           console.log(error.text);
         }
-      );*/
+      );
   };
 
   return (
@@ -47,6 +49,7 @@ export default function ContactForm() {
           placeholder="Benjamin"
           required
           onInput={(e) => setName(e.target.value)}
+          name="name"
         />
         <label htmlFor="nameFloating">Nombre *</label>
         <div className="valid-feedback text-start">Bien!</div>
@@ -62,6 +65,7 @@ export default function ContactForm() {
           placeholder="Benjamin"
           required
           onInput={(e) => setEmail(e.target.value)}
+          name="email"
         />
         <label htmlFor="emailFloating">Correo *</label>
         <div className="valid-feedback text-start">Bien!</div>
@@ -77,6 +81,7 @@ export default function ContactForm() {
           placeholder="Benjamin"
           required
           onInput={(e) => setContact(e.target.value)}
+          name="contact"
         />
         <label htmlFor="numberFloating">
           Metodo de Contacto (Instagram, Facebook, Numero, etc) *
@@ -93,6 +98,7 @@ export default function ContactForm() {
           id="floatingTextarea"
           required
           onInput={(e) => setMessage(e.target.value)}
+          name="message"
         ></textarea>
         <label htmlFor="floatingTextarea">Mensaje *</label>
         <div className="valid-feedback text-start">Bien!</div>

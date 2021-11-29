@@ -9,34 +9,47 @@ export default function ConsultForm(props) {
   const [size, setSize] = useState("");
   const [design, setDesign] = useState("");
   const [commune, setCommune] = useState("");
+  const [date, setDate] = useState("");
   const form = useRef();
 
   const SendEmail = (e) => {
     e.preventDefault();
-    if(name === "" || contact === "" || flavor === "" || size === "" || design === "" || commune === "") return;
-    SucessAlert(
-      "Mensaje enviado correctamente, gracias por enviar tu presupuesto."
-    );
-    console.log(`${name}, ${contact}, ${flavor}, ${size}, ${design}, ${commune}`);
-    /*emailjs
+    if (
+      name === "" ||
+      contact === "" ||
+      flavor === "" ||
+      size === "" ||
+      design === "" ||
+      commune === ""
+    ) {
+      return;
+    }
+    emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
+        "service_5qejtlg",
         "template_nhdfxrt",
-        form.current,
+        e.target,
         "user_2ih7wm0nDhK4iHTJJsGdA"
       )
       .then(
         (result) => {
-          
+          SucessAlert(
+            "Mensaje enviado correctamente, gracias por enviar tu presupuesto."
+          );
         },
         (error) => {
           console.log(error.text);
         }
-      );*/
+      );
   };
 
   return (
-    <form className={`needs-validation ${props.isActive ? "" : "d-none"}`} noValidate>
+    <form
+      className={`needs-validation ${props.isActive ? "" : "d-none"}`}
+      useref={form}
+      noValidate
+      onSubmit={SendEmail}
+    >
       <div className="form-floating">
         <input
           type="text"
@@ -45,6 +58,7 @@ export default function ConsultForm(props) {
           placeholder="Nombre"
           required
           onInput={(e) => setName(e.target.value)}
+          name="name"
         />
         <label htmlFor="nameFloating">Nombre *</label>
         <div className="valid-feedback text-start">Bien!</div>
@@ -60,6 +74,7 @@ export default function ConsultForm(props) {
           placeholder="Contacto"
           required
           onInput={(e) => setContact(e.target.value)}
+          name="contact"
         />
         <label htmlFor="numberFloating">
           Metodo de Contacto (Instagram, Facebook, Numero, etc) *
@@ -77,6 +92,7 @@ export default function ConsultForm(props) {
           placeholder="Sabor"
           required
           onInput={(e) => setFlavor(e.target.value)}
+          name="flavor"
         />
         <label htmlFor="numberFloating">Sabor *</label>
         <div className="valid-feedback text-start">Bien!</div>
@@ -90,6 +106,7 @@ export default function ConsultForm(props) {
           placeholder="Tamaño"
           required
           onInput={(e) => setSize(e.target.value)}
+          name="size"
         />
         <label htmlFor="numberFloating">Tamaño *</label>
         <div className="valid-feedback text-start">Bien!</div>
@@ -105,6 +122,7 @@ export default function ConsultForm(props) {
           placeholder="Diseño"
           required
           onInput={(e) => setDesign(e.target.value)}
+          name="design"
         />
         <label htmlFor="numberFloating">Describa el diseño *</label>
         <div className="valid-feedback text-start">Bien!</div>
@@ -120,11 +138,28 @@ export default function ConsultForm(props) {
           placeholder="Comuna"
           required
           onInput={(e) => setCommune(e.target.value)}
+          name="office"
         />
         <label htmlFor="numberFloating">Comuna de despacho *</label>
         <div className="valid-feedback text-start">Bien!</div>
         <div className="invalid-feedback text-start mb-2">
           Ingresa tu comuna de despacho.
+        </div>
+      </div>
+      <div className="form-floating">
+        <input
+          type="date"
+          className="form-control input_contact input_date"
+          id="numberFloating"
+          placeholder="Fecha"
+          required
+          onInput={(e) => setDate(e.target.value)}
+          name="date"
+        />
+        <label htmlFor="numberFloating">Fecha *</label>
+        <div className="valid-feedback text-start">Bien!</div>
+        <div className="invalid-feedback text-start mb-2">
+          Ingresa la fecha para la que quieres la torta.
         </div>
       </div>
       <button type="submit" className="input_contact_button">

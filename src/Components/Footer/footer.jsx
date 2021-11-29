@@ -15,10 +15,9 @@ export default function Footer() {
             </div>
             <img src="/img/largeborder.png" alt="" srcSet="" className='footerContainer__borderimg' />
             <div className="d-flex footerContainer__brand">
-                <img src="/img/cakeicon.png" alt="" width="80" height="54" />
-                Pasteleria Reina
+                <img src="/img/REINA.png" alt="" width="15%" height="15%" />
             </div>
-            <p className='footerContainer__copyright'>Copyright © 2021 | <a href="/politic">Politica y Privacidad</a></p>
+            <p className='footerContainer__copyright'>Copyright © 2021 | Desarrollado por: <a href="https://portfolio-benjaminperez.netlify.app/">Benjamin</a></p>
         </div>
     </div>
   );

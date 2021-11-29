@@ -27,11 +27,9 @@ export function CakesPage() {
         <div className="informationSection">
           <h1 className="informationSection__title">Variedad de pasteles</h1>
           <p className="informationSection__description">
-            Nos consediremas la mejor pasteleria, nos importa cada uno de los
-            detalles en todas las tortas que hacemos para satisfacer a nuestro
-            cliente. Hemos crecido gracias a todos nuestros clientes los cuales
-            ya son mas de 500 y todos estos nos han recomendado de forma
-            positiva, que esperas.. Agenda ya tu torta!.
+            Todos nuestros pasteles son pedidos por nuestro cliente a su gusto y
+            en el tiempo que desee, contamos con todo tipo de opciones que se
+            adaptan a sus necesidades y gustos.
           </p>
         </div>
       </div>
@@ -55,11 +53,11 @@ export function CakesPage() {
         <div className="informationSection">
           <h1 className="informationSection__title">¿ Porque elegirnos ?</h1>
           <p className="informationSection__description">
-            Nos consediremas la mejor pasteleria, nos importa cada uno de los
-            detalles en todas las tortas que hacemos para satisfacer a nuestro
-            cliente. Hemos crecido gracias a todos nuestros clientes los cuales
-            ya son mas de 500 y todos estos nos han recomendado de forma
-            positiva, que esperas.. Agenda ya tu torta!.
+            Pasteleria reina a dejado buenas expectativas a nuestros clientes,
+            por eso nos esforzamos en ofrecer una variedad de pasteles que
+            satisfagan sus necesidades y gustos. Nuestros pasteles son
+            elaborados con ingredientes de primera calidad, con la mejor
+            tecnologia y con la mejor atencion.
           </p>
         </div>
       </div>
@@ -74,7 +72,7 @@ export function CakesPage() {
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content bg-transparent border-0">
             <div className="modal-body p-0">
-              <img className="modal-img" alt='imagen click'></img>
+              <img className="modal-img" alt="imagen click"></img>
             </div>
           </div>
         </div>

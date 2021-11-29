@@ -6,7 +6,7 @@
     margin-left: 5%;
 }
 .navbar-nav{
-    margin-left: 20%;
+    margin-left: 0%;
 }
 .nav-item{
     margin-left: 15px;
@@ -39,10 +39,34 @@
     width: 100%;
     height: 100%;
 }
+@media (max-width: 1440px) {
+    .navbar-brand img{
+        width: 16%;
+        height: 16%;
+        align-self: center;
+        align-items: center;
+    }
+}
 @media (max-width: 768px){
     .navbar-nav{
         margin-left: 0;
         text-align: center;
+    }
+    .navbar-brand img{
+        width: 30%;
+        height: 30%;
+    }
+}
+@media (max-width: 425px){
+    .navbar-brand p{
+        display: none !important;
+    }
+    .navbar-brand img{
+        width: 79%;
+        height: 79%;
+    }
+    .navbar-brand{
+        width: 100% !important;
     }
 }
 @media (max-width: 320px){

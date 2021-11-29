@@ -12,6 +12,7 @@ export default function ContactForm() {
 
   const SendEmail = (e) => {
     e.preventDefault();
+    if(name === "" || email === "" || contact === "" || message === "") return;
     SucessAlert('Mensaje enviado correctamente, gracias por contactarnos.');
     console.log(`${name}, ${email}, ${contact}, ${message}`)
     /*emailjs

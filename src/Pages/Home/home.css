@@ -60,6 +60,30 @@
   overflow: hidden;
   color: #fff !important;
 }
+.imageGalleryBest__imgDiv img{
+  transition: border 0.2s ease;
+  width: 70%;
+  height: 70%;
+  margin: 1em;
+  border: 5px solid #fff;
+  transition: border-color 0.5s ease;
+}
+.imageGalleryBest__imgDiv img:hover{
+  cursor: pointer;
+  border-color: #9E574B;
+}
+.best_cakes_title{
+  color: white;
+}
+.best_cakes_desc{
+  color: #fff;
+}
+#modal-content-best_cakes{
+  border-radius: 10px;
+}
+#modal-img-best_cakes{
+  border-radius: 10px 0 0 10px;
+}
 @media (max-width: 1024px) {
   .testimonySection__title {
     font-size: 50px;

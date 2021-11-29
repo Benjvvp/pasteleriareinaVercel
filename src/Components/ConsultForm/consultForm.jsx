@@ -13,6 +13,7 @@ export default function ConsultForm(props) {
 
   const SendEmail = (e) => {
     e.preventDefault();
+    if(name === "" || contact === "" || flavor === "" || size === "" || design === "" || commune === "") return;
     SucessAlert(
       "Mensaje enviado correctamente, gracias por enviar tu presupuesto."
     );

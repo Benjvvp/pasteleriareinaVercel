@@ -7,9 +7,9 @@ export default function NavBar(props) {
     <>
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/contact">
-          <img src="/img/cakeicon.png" alt="Brand Icon" width="80" height="54" />
-          Pasteleria Reina
+        <a className="navbar-brand w-50" href="/contact">
+          <img src="/img/REINA.png" alt="Brand Icon" width="14%" height="14%" />
+          <p className="d-inline-block ms-2">Pasteleria Reina</p>
         </a>
         <button
           className="navbar-toggler"

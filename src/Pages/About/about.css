@@ -1,0 +1,57 @@
+.howtoworkingSection{
+    background: url('https://i.ibb.co/kXv28zv/working-BG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-bottom: 4em;
+}
+.howtoworkingSection__title {
+    color: #fff;
+    font-family: "AMATIC SC";
+    font-size: 50px;
+    font-weight: normal;
+    padding-bottom: 2%;
+}
+.icon_working{
+    width: 72px;
+    height: 76px;
+    text-align: center;
+}
+.number_working{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5%;
+    font-family: 'Open Sans';
+    margin-bottom: 1%;
+}
+.text_working{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Open Sans';
+    color: #fff;
+    margin-top: 3em;
+}
+.numberAdvantage{
+    font-family: 'Amatic SC';
+    font-size: 60px;
+}
+.titleAdvantage{
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 20px;
+    color: #555555;
+}
+.descAdvantage{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: #555555;
+}
+.howtoworkingCard{
+    transition: background-color 0.5s ease;
+}
+.howtoworkingCard:hover{
+    background-color: rgba(255,255,255,0.2);
+}

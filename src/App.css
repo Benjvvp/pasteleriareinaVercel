@@ -1,0 +1,35 @@
+.informationSection{
+  margin-top: 2%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.informationSection__title{
+  font-family: 'AMATIC SC';
+  font-size: 70px;
+  font-weight: normal;
+  padding-bottom: 2%;
+}
+.informationSection__description{
+  color: #777777;
+  font-size: 20px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1024px) {
+  .informationSection__title{
+    font-size: 65px;
+  }
+  .informationSection__description{
+    font-size: 19px;
+  }
+}
+@media (max-width: 425px) {
+  .informationSection__title{
+    font-size: 55px;
+  }
+  .informationSection__description{
+    font-size: 19px;
+  }
+}

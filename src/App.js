@@ -13,7 +13,7 @@ function usePageViews(){
     }
     ReactGA.set({ page: location.pathname });
     ReactGA.pageview(location.pathname);
-    console.log('xd')
+    console.log(location)
   }, [location])
 }
 

@@ -1,14 +1,23 @@
 import "./App.css";
 import ReactGA from 'react-ga';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { HomePage, AboutPage, CakesPage, ContactPage } from "./Pages";
 import { useEffect } from "react";
 
-function App() {
+function usePageViews(){
+  let location = useLocation();
   useEffect(() => {
-    ReactGA.initialize('G-NFT2Q8TCSS')
-    ReactGA.pageview(window.location.pathname + window.location.search)
-  }, [])
+    if(!window.GA_INITIALIZED){
+      ReactGA.initialize('G-NFT2Q8TCSS');
+      window.GA_INITIALIZED = true;
+    }
+    ReactGA.set({ page: location.pathname });
+    ReactGA.pageview(location.pathname);
+  }, [location])
+}
+
+function App() {
+  usePageViews();
   return (
     <Router>
         <Routes>

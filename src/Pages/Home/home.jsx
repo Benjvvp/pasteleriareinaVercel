@@ -155,9 +155,9 @@ export function HomePage() {
       <Footer />
 
       <div
-        class="modal fade"
+        className="modal fade"
         id="galleryModal"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="galleryModal"
         aria-hidden="true"
       >

@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    ReactGA.initialize('G-FBYW99B5G1')
+    ReactGA.initialize('G-NFT2Q8TCSS')
     ReactGA.pageview(window.location.pathname + window.location.search)
   }, [])
   return (

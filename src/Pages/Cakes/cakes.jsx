@@ -27,9 +27,8 @@ export function CakesPage() {
         <div className="informationSection">
           <h1 className="informationSection__title">Variedad de pasteles</h1>
           <p className="informationSection__description">
-            Todos nuestros pasteles son pedidos por nuestro cliente a su gusto y
-            en el tiempo que desee, contamos con todo tipo de opciones que se
-            adaptan a sus necesidades y gustos.
+            Además de tortas, elaboramos diferentes tipos de pasteles, como pie
+            de limón, küchen de manzana, tartaleta de frutas, chessecake, etc.
           </p>
         </div>
       </div>
@@ -53,11 +52,9 @@ export function CakesPage() {
         <div className="informationSection">
           <h1 className="informationSection__title">¿ Porque elegirnos ?</h1>
           <p className="informationSection__description">
-            Pasteleria reina a dejado buenas expectativas a nuestros clientes,
-            por eso nos esforzamos en ofrecer una variedad de pasteles que
-            satisfagan sus necesidades y gustos. Nuestros pasteles son
-            elaborados con ingredientes de primera calidad, con la mejor
-            tecnologia y con la mejor atencion.
+            Porque en Pastelería Reina podrás encontrar experiencia y dedicación
+            en cada uno de nuestros productos, diseños desde el más simple al
+            más complejo, variedad de sabores y productos de excelente calidad.
           </p>
         </div>
       </div>

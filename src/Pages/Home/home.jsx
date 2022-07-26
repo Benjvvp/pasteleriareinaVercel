@@ -28,15 +28,16 @@ export function HomePage() {
             Bienvenidos a nuestra pagina
           </h1>
           <p className="informationSection__description">
-            Te damos la bienvenida a nuestra página, un mundo mágico y de dulces
-            sabores. El diseño que buscas, el sabor que quieras y en la
-            comodidad de tu casa. Prefierenos, te sorprenderás.
+            Te damos la bienvenida a nuestra página. Un mundo mágico de dulces
+            sabores para esa ocasión especial. El diseño que buscas, el sabor
+            que prefieras y en la comodidad de tu hogar. <b>Atrévete
+            a probarnos, te sorprenderás.</b>
           </p>
         </div>
       </div>
       <div className="informationSection__container pb-0">
         <div className="informationSection mb-0">
-          <h1 className="informationSection__title">Nuestras mejores tortas</h1>
+          <h1 className="informationSection__title">Algunos de nuestros diseños</h1>
           <div className="imageGallery_imgContainer row justify-content-center">
             <div className="imageGalleryBest__imgDiv col-8 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
               <img
@@ -59,7 +60,13 @@ export function HomePage() {
                 alt={`Imagen numero`}
                 srcSet=""
                 className="mx-auto d-block"
-                onClick={(e) => imageClick(e, 'Jackita Muñoz', 'Maravillosa en general la tematica y que decir el relleno 👏👏 100% recomendable.')}
+                onClick={(e) =>
+                  imageClick(
+                    e,
+                    "Jackita Muñoz",
+                    "Maravillosa en general la tematica y que decir el relleno 👏👏 100% recomendable."
+                  )
+                }
               />
             </div>
             <div className="imageGalleryBest__imgDiv col-8 col-xl-3 col-lg-5 pb-lg-5 col-md-6">

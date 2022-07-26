@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="d-flex footerContainer__brand">
                 <img src="/img/REINA.png" alt="" width="15%" height="15%" />
             </div>
-            <p className='footerContainer__copyright'>Copyright © 2021 | Desarrollado por: <a href="https://portfolio-benjaminperez.netlify.app/">Benjamin Perez</a></p>
+            <p className='footerContainer__copyright'>Copyright © 2021 | Desarrollado por: <a href="https://benjaminperez.tech/">Benjamin Perez</a></p>
         </div>
     </div>
   );

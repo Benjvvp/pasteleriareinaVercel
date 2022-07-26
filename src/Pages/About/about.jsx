@@ -36,8 +36,9 @@ export function AboutPage() {
               />
               <p className="number_working">01</p>
               <p className="text_working" href="#">
-                Primero que todo charlas con uno de nuestros integrantes para
-                hacer la agendacion del producto.
+                Uno de nuestros colaboradores te contactará para determinar
+                especificaciones del pedido (Sabor, Tamaño, Diseño y Comuna del
+                despacho)
               </p>
             </div>
             <div className="col-xl-3 col-lg-5 pb-lg-5 pt-lg-5 col-md-10 pb-5 howtoworkingCard">
@@ -49,8 +50,8 @@ export function AboutPage() {
               />
               <p className="number_working">02</p>
               <p className="text_working" href="#">
-                Se agenda la torta en nuestro calendario para tenerla en cuenta
-                proximamente.
+                Se realiza el agendamiento. Para esto se solicita el depósito
+                previo del 50% del valor del producto
               </p>
             </div>
             <div className="col-xl-3 col-lg-5 pb-lg-5 pt-lg-5 col-md-10 pb-5 howtoworkingCard">
@@ -62,8 +63,7 @@ export function AboutPage() {
               />
               <p className="number_working">03</p>
               <p className="text_working" href="#">
-                Se inicia la produccion de la torta para la entrega a tiempo del
-                producto.
+                Se inicia proceso de producción
               </p>
             </div>
             <div className="col-xl-3 col-lg-5 pb-lg-5 pt-lg-5 col-md-10 pb-5 howtoworkingCard">
@@ -75,7 +75,7 @@ export function AboutPage() {
               />
               <p className="number_working">04</p>
               <p className="text_working" href="#">
-                Se entrega en su hogar.
+                Entrega de producto el día, hora y dirección acordada.
               </p>
             </div>
           </div>
@@ -111,9 +111,9 @@ export function AboutPage() {
                       <div className="card-body">
                         <h5 className="card-title titleAdvantage">Diseño</h5>
                         <p className="card-text descAdvantage">
-                          El diseño que prefieras, hacemos replicas y diseños
-                          originales, siempre y cuando coincidan los productos
-                          con las técnicas.
+                          Hacemos diseños originales y también replicamos alguno
+                          de tu preferencia. Se analiza la factibilidad para
+                          poder realizar la ejecución de cada proyecto.
                         </p>
                       </div>
                     </div>
@@ -147,10 +147,8 @@ export function AboutPage() {
                           Responsabilidad
                         </h5>
                         <p className="card-text descAdvantage">
-                          Solo aquí podras recibir la torta el día y la hora que
-                          la necesites. También podrás pedir la mezcla de
-                          sabores que desees, sin límite. El valor depende de
-                          los sabores que pidas.
+                          Tendrás la tranquilidad de recibir tu pedido tal como
+                          se acordó, el día y la hora solicitada.
                         </p>
                       </div>
                     </div>
@@ -182,10 +180,10 @@ export function AboutPage() {
                       <div className="card-body">
                         <h5 className="card-title titleAdvantage">Calidad</h5>
                         <p className="card-text descAdvantage">
-                          Tortas frescas, seguimos las normas de higiene y
-                          seguridad para que recibas un producto optimo, fresco
-                          y con cadenas de frío estrictos para tu seguridad y la
-                          de tu familia.
+                          Utilizamos ingredientes de alta calidad, siguiendo las
+                          normas establecidas para que recibas un producto
+                          óptimo y fresco garantizando la seguridad de tu
+                          familia.
                         </p>
                       </div>
                     </div>
@@ -219,9 +217,8 @@ export function AboutPage() {
                           Precios Justos
                         </h5>
                         <p className="card-text descAdvantage">
-                          Todos nuestros precios son de acuerdo a la torta solicitada,
-                          tambien todos estos se adaptan a todas las personas para que nadie se pierda
-                          una torta de calidad y pueda celebrar junto a su familia.
+                          Nuestros precios están establecidos de acuerdo a
+                          sabor, estructura base y complejidad del diseño.
                         </p>
                       </div>
                     </div>

@@ -38,7 +38,7 @@ export function AboutPage() {
               <p className="text_working" href="#">
                 Uno de nuestros colaboradores te contactará para determinar
                 especificaciones del pedido (Sabor, Tamaño, Diseño y Comuna del
-                despacho)
+                despacho).
               </p>
             </div>
             <div className="col-xl-3 col-lg-5 pb-lg-5 pt-lg-5 col-md-10 pb-5 howtoworkingCard">
@@ -51,7 +51,7 @@ export function AboutPage() {
               <p className="number_working">02</p>
               <p className="text_working" href="#">
                 Se realiza el agendamiento. Para esto se solicita el depósito
-                previo del 50% del valor del producto
+                previo del 50% del valor del producto.
               </p>
             </div>
             <div className="col-xl-3 col-lg-5 pb-lg-5 pt-lg-5 col-md-10 pb-5 howtoworkingCard">
@@ -63,7 +63,7 @@ export function AboutPage() {
               />
               <p className="number_working">03</p>
               <p className="text_working" href="#">
-                Se inicia proceso de producción
+                Se inicia proceso de producción.
               </p>
             </div>
             <div className="col-xl-3 col-lg-5 pb-lg-5 pt-lg-5 col-md-10 pb-5 howtoworkingCard">

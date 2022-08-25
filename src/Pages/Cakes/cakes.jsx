@@ -8,8 +8,8 @@ import "./cakes.css";
 export function CakesPage() {
   function exportImages() {
     const imgURL = [];
-    for (var i = 1; i < 13; i++) {
-      imgURL.push(`/img/instagram/${i}.jpg`);
+    for (var i = 1; i < 35; i++) {
+      imgURL.push(`/img/instagram/${i}.jpeg`);
     }
     return imgURL;
   }

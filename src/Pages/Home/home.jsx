@@ -56,7 +56,7 @@ export function HomePage() {
             </div>
             <div className="imageGalleryBest__imgDiv col-8 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
               <img
-                src="/img/best_cakes/1.jpg"
+                src="/img/best_cakes/1.jpeg"
                 alt={`Imagen numero`}
                 srcSet=""
                 className="mx-auto d-block"
